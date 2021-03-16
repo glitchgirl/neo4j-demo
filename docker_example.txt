@@ -3,3 +3,6 @@ docker run \
 --volume=$HOME/neo4j/data:/data \
 --volume=$HOME/neo4j/import:/import \ 
 neo4j
+
+
+*default login is neo4j/neo4j and password reset prompt once logged in*
