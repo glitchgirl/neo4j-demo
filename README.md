@@ -3,7 +3,7 @@
 This is a demo for a talk with QueerJS!
 
 Links:
-
+- [what is a graph](https://neo4j.com/developer/graph-database/)
 - [Neptune](https://aws.amazon.com/neptune/)
 - [tinkerpop](https://tinkerpop.apache.org/)
 - [Neo4j](https://neo4j.com/)
