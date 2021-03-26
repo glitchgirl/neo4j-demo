@@ -1,6 +1,7 @@
 # neo4j-demo
 
 This is a demo for a talk with QueerJS!
+We will be using docker, so I reccomend installing it if you want to follow along. 
 
 Links:
 - [what is a graph](https://neo4j.com/developer/graph-database/)
