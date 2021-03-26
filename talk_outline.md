@@ -30,4 +30,14 @@ Cypher Graph Language
 
 
 Neo4j demo
-
+1) download docker - https://www.docker.com/products/docker-desktop
+2) pull neo4j image https://hub.docker.com/_/neo4j
+3) run command to start
+  ```
+  docker run \
+    --publish=7474:7474 --publish=7687:7687 \
+    --volume=$HOME/neo4j/data:/data \
+    neo4j
+ ```
+ 4) go to localhost:7474
+ 5) play!
