@@ -22,6 +22,7 @@ or
 `the quantities, characters, or symbols on which operations are performed by a computer, being stored and transmitted in the form of electrical signals and recorded on magnetic, optical, or mechanical recording media.`
 Thats dense, but what we care about is the fact that data is just anything that we can store and is important. The idea that the data is important is critical to data science, and just generally making effective choices. For example if you are trying to make a choice about whether or not bring an umbrella out with you, you don't care about what phase the moon is in. The moon's phase isn't data, its just noise. The wind, and chance of rain are the data points that we care about. We can expand this idea to also think about bigger picture things, like what data is useful to show a person on their profile. 
 :star2:
+
 As humans, we have a limit to how much data we can remember and use, so we use databases to store data.
 What's a traditional database?
 `a structured set of data held in a computer, especially one that is accessible in various ways.` What this means, its a standard way of organizing data, with rules about how to get the data. These are really useful for structured data, like geo-location data, credit card infomation, or stock prices. 
@@ -40,6 +41,7 @@ https://neo4j.com/blog/uncommon-use-cases-graph-databases/
 This is a way of building a database that focuses on the relationships that might be more complicated than what a traditional database can. 
 There are two main flavors of graph, and we will talk about them.
 
+:star2:
 What problems does it solve?
 
 Graph databases are great at solving complex relational data, like 
@@ -50,6 +52,7 @@ Biological/health sciences (this is what i used to do)
 In a traditional database, these relationships can be hard to model
 Graph databases are also extremely flexible
 
+:star2:
 What are some common implementations?
  
 Neptune - AWS
@@ -61,6 +64,7 @@ Gremlin - Apache
 Neo4j - neo4j 
 Cypher Graph Language 
 
+:star2:
 Alright! So we have talked about what data is, what a database is, why traditional databases might not always be the best solution for data managament, espically when it comes to things like rapidly changing data. Lets take a look at Neo4j! 
 Neo4j demo
 1) download docker - https://www.docker.com/products/docker-desktop
@@ -75,10 +79,13 @@ Neo4j demo
  4) go to localhost:7474
  5) play!
 
+:star2:
 Next steps:
 If you are interested in this, I recommend playing with this. I also recomend setting up insomnia for API testing, since postman doesn't super behave well with graphQL apis. They have been saying they have fixed it, so it might work beter now. 
 I also recommend learning a little bit of discrete math to understand how these structures work. And I know that sounds scary, but its math with pictures!! So its not bad.
 I do also recommend taking some data science classes.
+
+:star2:
 Any questions?
 
 Thanks! 
