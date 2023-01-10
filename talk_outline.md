@@ -21,20 +21,24 @@ According to oxford it's
 or
 `the quantities, characters, or symbols on which operations are performed by a computer, being stored and transmitted in the form of electrical signals and recorded on magnetic, optical, or mechanical recording media.`
 Thats dense, but what we care about is the fact that data is just anything that we can store and is important. The idea that the data is important is critical to data science, and just generally making effective choices. For example if you are trying to make a choice about whether or not bring an umbrella out with you, you don't care about what phase the moon is in. The moon's phase isn't data, its just noise. The wind, and chance of rain are the data points that we care about. We can expand this idea to also think about bigger picture things, like what data is useful to show a person on their profile. 
-:star2:
 
+:star2:
 As humans, we have a limit to how much data we can remember and use, so we use databases to store data.
 What's a traditional database?
 `a structured set of data held in a computer, especially one that is accessible in various ways.` What this means, its a standard way of organizing data, with rules about how to get the data. These are really useful for structured data, like geo-location data, credit card infomation, or stock prices. 
-This is typically done with a sql database, in any of it's flavors (mysql, oracle, postgre). However, these kind of structure doesn't apply to all data, and these types of databases can really struggle with data where the relationships can change over time. One way we can deal with these changelles is nosql.
-NoSQL databases can include things like key-value structures, document storage. Common examples include things like mongo. The benefits of these systems include things like partition tolerance and availability. For example, let's say we had a SQL database for e-commerce system. It has, customers, items, and orders. Let's say then, due to some privacy laws, we had to delete old customers, however for taxes we need to keep the order history. In a traditional SQL database, this could cause lots of issues with null refrences. NoSQL would handle this example by keeping the data in the order, but not the refrence. 
-:star2:
+This is typically done with a sql database, in any of it's flavors (mysql, oracle, postgre). However, these kind of structure doesn't apply to all data, and these types of databases can really struggle with data where the relationships can change over time. 
 
+:star2:
+One way we can deal with these changelles is nosql.
+NoSQL databases can include things like key-value structures, document storage. Common examples include things like mongo. The benefits of these systems include things like partition tolerance and availability. For example, let's say we had a SQL database for e-commerce system. It has, customers, items, and orders. Let's say then, due to some privacy laws, we had to delete old customers, however for taxes we need to keep the order history. In a traditional SQL database, this could cause lots of issues with null refrences. NoSQL would handle this example by keeping the data in the order, but not the refrence.
+
+:star2:
 This is was a small example, and in our data landscape today, data and relationships between the data can change frequently, and sometimes we care more about the relationships, than the data. 
 This is where graph comes in. So graphs are mathematical structures used to model pairwise relations between objects. Oof. Also dense. Let's look at pictures.  
 Awesome, we know what a graph is, and we know what database is. 
-What is a graph database?
 
+:star2:
+What is a graph database?
 A graph database is according to wiki, In computing, a graph database is a database that uses graph structures for semantic queries with nodes, edges, and properties to represent and store data. A key concept of the system is the graph.
 Thats not super understandable, lets break it up and look some pictures
 https://neo4j.com/blog/uncommon-use-cases-graph-databases/
