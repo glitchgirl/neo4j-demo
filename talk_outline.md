@@ -70,6 +70,23 @@ Cypher Graph Language
 
 :star2:
 Alright! So we have talked about what data is, what a database is, why traditional databases might not always be the best solution for data managament, espically when it comes to things like rapidly changing data. Lets take a look at Neo4j! 
+
+We are going to do the Movie demo
+Load: Insert movie data into the graph.
+We do this with the create function, and we add data with a lot of variables
+We will also use that create function to add relationships, such as acted in, directed, follows, and reviewed.
+Then we use a with and a match function to return some data so we don't see everything
+Constrain: Create unique node property constraints.
+Then we will constain the movie titles so we don't have any dupes. (in real life we would probably make an id or something, since you can have people or movies with the same name)
+Index: Index nodes based on their labels.
+Now we will index the data to increase the search performance
+Find: Retrieve individual movies and actors.
+We use match, and limit. and where
+Query: Discover related actors and directors.
+Now, we can get into the fun stuff, like who has worked with other people
+Solve: The Bacon Path.
+The 6 degrees of Kevin Bacon
+
 Neo4j demo
 1) download docker - https://www.docker.com/products/docker-desktop
 2) pull neo4j image https://hub.docker.com/_/neo4j
@@ -81,7 +98,9 @@ Neo4j demo
     neo4j
  ```
  4) go to localhost:7474
- 5) play!
+ 5) play! (demo password is now 1qazxsw2) 
+
+
 
 :star2:
 Next steps:
