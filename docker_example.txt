@@ -1,8 +1,8 @@
 docker run \
---publish=7474:7474 --publish=7687:7687\ 
---volume=$HOME/neo4j/data:/data \
---volume=$HOME/neo4j/import:/import \ 
-neo4j
+    --publish=7474:7474 --publish=7687:7687 \
+    --volume=$HOME/neo4j/data:/data \
+    neo4j
 
 
 *default login is neo4j/neo4j and password reset prompt once logged in*
+source: https://hub.docker.com/_/neo4j
