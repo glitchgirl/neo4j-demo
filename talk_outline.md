@@ -23,7 +23,11 @@ or
 Thats dense, but what we care about is the fact that data is just anything that we can store and is important. The idea that the data is important is critical to data science, and just generally making effective choices. For example if you are trying to make a choice about whether or not bring an umbrella out with you, you don't care about what phase the moon is in. The moon's phase isn't data, its just noise. The wind, and chance of rain are the data points that we care about. We can expand this idea to also think about bigger picture things, like what data is useful to show a person on their profile. 
 
 :star2:
-As humans, we have a limit to how much data we can remember and use, so we use databases to store data.
+What is a relationship?
+It is a relation (some kind of connection that has value) between two things.
+
+:star2:
+As humans, we have a limit to how much data we can remember and use, so we use databases to store data. Especially when we start thinking about relationships.
 What's a traditional database?
 `a structured set of data held in a computer, especially one that is accessible in various ways.` What this means, its a standard way of organizing data, with rules about how to get the data. These are really useful for structured data, like geo-location data, credit card infomation, or stock prices. 
 This is typically done with a sql database, in any of it's flavors (mysql, oracle, postgre). However, these kind of structure doesn't apply to all data, and these types of databases can really struggle with data where the relationships can change over time. 
@@ -71,7 +75,12 @@ Cypher Graph Language
 :star2:
 Alright! So we have talked about what data is, what a database is, why traditional databases might not always be the best solution for data managament, espically when it comes to things like rapidly changing data. Lets take a look at Neo4j! 
 
-We are going to do the Movie demo
+
+:star2:v
+So in order to look at graph databases we will be trying to solve the 6 degrees of Kevin bacon, which would be difficult with a traditional databse.
+
+:star2:
+Some code (don't worry to much yet)
 Load: Insert movie data into the graph.
 We do this with the create function, and we add data with a lot of variables
 We will also use that create function to add relationships, such as acted in, directed, follows, and reviewed.
@@ -87,6 +96,7 @@ Now, we can get into the fun stuff, like who has worked with other people
 Solve: The Bacon Path.
 The 6 degrees of Kevin Bacon
 
+:star2:
 Neo4j demo
 1) download docker - https://www.docker.com/products/docker-desktop
 2) pull neo4j image https://hub.docker.com/_/neo4j
@@ -99,7 +109,6 @@ Neo4j demo
  ```
  4) go to localhost:7474
  5) play! (demo password is now 1qazxsw2) 
-
 
 
 :star2:
